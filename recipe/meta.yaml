@@ -1,6 +1,6 @@
 {% set name = "pynetdicom" %}
-{% set version = "1.4.1" %}
-{% set sha256 = "f977f650e95ccb52dd9fbf1d012123e74c3391c09f8081da074b2a4c99fda8ab" %}
+{% set version = "1.5.0" %}
+{% set sha256 = "a5a2a091142e611b49d638442c32040b94d473e9bb98b53ebd8224ffea9c0c9b" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python
-    - pydicom
+    - pydicom 1.4.2
 
 test:
   imports:
@@ -33,7 +33,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENCE.txt
-  summary: 'A Python implementation of the DICOM networking protocol'
+  summary: A Python implementation of the DICOM networking protocol
   description: |
     pynetdicom is a pure Python package that implements the
     DICOM <http://dicom.nema.org> networking protocol. Working with pydicom
