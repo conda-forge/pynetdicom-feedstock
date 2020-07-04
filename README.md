@@ -5,7 +5,7 @@ Home: https://github.com/pydicom/pynetdicom
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A Python implementation of the DICOM networking protocol
 
