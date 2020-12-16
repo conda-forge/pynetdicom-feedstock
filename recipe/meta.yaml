@@ -1,6 +1,6 @@
 {% set name = "pynetdicom" %}
-{% set version = "1.5.3" %}
-{% set sha256 = "c9a08211cb3db72c0a40e4c06ab872839759416b736e664b31688307497f1ffe" %}
+{% set version = "1.5.4" %}
+{% set sha256 = "a0de8317cd9afa2befa758e218c9375b8f62f87d909073ea1e4f3b4cbc423217" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python
     - pip
   run:
