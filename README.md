@@ -5,9 +5,13 @@ Home: https://github.com/pydicom/pynetdicom
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pynetdicom-feedstock/blob/master/LICENSE.txt)
 
 Summary: A Python implementation of the DICOM networking protocol
+
+Development: https://github.com/pydicom/pynetdicom
+
+Documentation: https://pydicom.github.io/pynetdicom
 
 pynetdicom is a pure Python package that implements the
 DICOM <http://dicom.nema.org> networking protocol. Working with pydicom
