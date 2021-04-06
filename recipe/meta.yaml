@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python
-    - pydicom 1.4.2
+    - pydicom >=1.4.2
 
 test:
   imports:
