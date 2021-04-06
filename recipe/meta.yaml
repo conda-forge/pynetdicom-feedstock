@@ -25,8 +25,9 @@ requirements:
     - pydicom >=1.4.2
 
 test:
-  imports:
+  requires:
     - setuptools
+  imports:
     - pynetdicom
 
 about:
