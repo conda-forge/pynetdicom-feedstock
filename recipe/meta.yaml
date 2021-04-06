@@ -26,6 +26,7 @@ requirements:
 
 test:
   imports:
+    - setuptools
     - pynetdicom
 
 about:
