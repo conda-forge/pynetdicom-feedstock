@@ -1,5 +1,5 @@
 {% set name = "pynetdicom" %}
-{% set version = "1.5.7" %}
+{% set version = "2.0.0" %}
 {% set sha256 = "fd7ec5955d3ad6038aa64a6514694950413c14f02c2781e1a4b006185140a995" %}
 
 package:
@@ -18,11 +18,11 @@ build:
 
 requirements:
   host:
-    - python >=2.7
+    - python >=3.7
     - pip
   run:
-    - python >=2.7
-    - pydicom >=1.4.2
+    - python >=3.7
+    - pydicom >=2.0.0
 
 test:
   requires:
@@ -38,8 +38,8 @@ about:
   summary: A Python implementation of the DICOM networking protocol
   description: |
     pynetdicom is a pure Python package that implements the
-    DICOM <http://dicom.nema.org> networking protocol. Working with pydicom
-    <https://github.com/pydicom/pydicom>, it allows the easy creation of
+    DICOM networking protocol. Working with pydicom
+    (https://github.com/pydicom/pydicom), it allows the easy creation of
     DICOM Service Class Users (SCUs) and Service Class Providers (SCPs)
     which can then be used to associate with other applications and transfer
     DICOM data.
