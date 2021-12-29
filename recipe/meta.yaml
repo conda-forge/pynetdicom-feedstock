@@ -1,6 +1,6 @@
 {% set name = "pynetdicom" %}
-{% set version = "2.0.0" %}
-{% set sha256 = "3741e27e59cf155dc68d79bb41b2f21046d5c153557c0178d968bf4a9a74d44a" %}
+{% set version = "2.0.1" %}
+{% set sha256 = "adf0af3d81bff6f9b2a738155dce40da83b3365d0f14cd96134e03d8ce461fd4" %}
 
 package:
   name: {{ name|lower }}
