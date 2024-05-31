@@ -1,6 +1,6 @@
 {% set name = "pynetdicom" %}
-{% set version = "2.0.2" %}
-{% set sha256 = "470e48d98a1a6e596f75665ae5c47ca8046c7b7011784f02a67bd24235b03880" %}
+{% set version = "2.1.0" %}
+{% set sha256 = "8d9e91902cff4d716407a060a6de4d4ee8baa6e9c688420ef6aba49230ece96b" %}
 
 package:
   name: {{ name|lower }}
@@ -18,15 +18,16 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.10
     - pip
+    - poetry >=1.8
   run:
-    - python >=3.7
-    - pydicom >=2.0.0
+    - python >=3.10
+    - pydicom >=2.4.0
 
 test:
   requires:
-    - setuptools
+    - poetry >=1.8
   imports:
     - pynetdicom
 
@@ -34,7 +35,7 @@ about:
   home: https://github.com/pydicom/pynetdicom
   license: MIT
   license_family: MIT
-  license_file: LICENCE.txt
+  license_file: LICENCE
   summary: A Python implementation of the DICOM networking protocol
   description: |
     pynetdicom is a pure Python package that implements the
