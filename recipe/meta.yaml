@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "pynetdicom" %}
 {% set version = "2.1.1" %}
 {% set sha256 = "d8d0cec1bc6fab893fa7f57ec7a49d71accefd8760c1a3b2726d8237b3a5715e" %}
@@ -13,21 +14,22 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
     - poetry >=1.8
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - pydicom >=2.4.0
 
 test:
   requires:
     - poetry >=1.8
+    - python {{ python_min }}
   imports:
     - pynetdicom
 
