@@ -1,7 +1,7 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "pynetdicom" %}
-{% set version = "2.1.1" %}
-{% set sha256 = "d8d0cec1bc6fab893fa7f57ec7a49d71accefd8760c1a3b2726d8237b3a5715e" %}
+{% set version = "3.0.0" %}
+{% set sha256 = "419a53dec4ae85b69856c739fb6917d55e6958c1d6726392337347e1e935e320" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
