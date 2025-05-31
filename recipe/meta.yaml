@@ -21,6 +21,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - flit
   run:
     - python >={{ python_min }}
     - pydicom >=3.0.0
