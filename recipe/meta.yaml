@@ -1,7 +1,7 @@
 {% set python_min = "3.10" %}
 {% set name = "pynetdicom" %}
-{% set version = "3.0.0" %}
-{% set sha256 = "419a53dec4ae85b69856c739fb6917d55e6958c1d6726392337347e1e935e320" %}
+{% set version = "3.0.1" %}
+{% set sha256 = "43626beb8a8cd47db72aac57868720ed38346eafdb4027c9388e9a342152e8a6" %}
 
 package:
   name: {{ name|lower }}
